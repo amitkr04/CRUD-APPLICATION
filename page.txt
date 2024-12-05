@@ -1,0 +1,83 @@
+if you want to do without use the localstorage then go through this code but your data will not be stored anywhere so your data will be deleted after refreshing the page.
+
+
+// const form = document.querySelector("#new-task-form");
+// const input = document.querySelector("#new-task-input");
+// const tasks = document.querySelector(".tasks");
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   const UserData = input.value;
+
+//   if (!UserData) {
+//     alert("Please enter a task before submitting!");
+//     return;
+//   }
+
+//   const task = document.createElement("div");
+//   task.classList.add("task");
+//   task.classList.add("mb-3");
+
+//   const content = document.createElement("div");
+//   content.classList.add("content");
+
+//   const task_input = document.createElement("input");
+//   task_input.classList.add("text");
+//   task_input.classList.add("form-control");
+//   task_input.classList.add("mb-2");
+//   task_input.value = UserData;
+//   task_input.setAttribute("readonly", "readonly");
+//   task_input.type = "text";
+
+//   content.appendChild(task_input);
+//   task.appendChild(content);
+//   tasks.appendChild(task);
+
+//   //now for buttons
+//   const actions = document.createElement("div");
+//   actions.classList.add("actions");
+
+//   const task_edit = document.createElement("button");
+//   task_edit.classList.add("edit");
+//   task_edit.classList.add("btn");
+//   task_edit.classList.add("btn-warning");
+//   task_edit.innerHTML = "Edit";
+
+//   const task_delete = document.createElement("button");
+//   task_delete.classList.add("delete");
+//   task_delete.classList.add("btn");
+//   task_delete.classList.add("btn-danger");
+//   task_delete.classList.add("mx-2");
+//   task_delete.innerHTML = "Delete";
+
+//   actions.appendChild(task_edit);
+//   actions.appendChild(task_delete);
+//   task.appendChild(actions);
+
+//   input.value = "";
+
+//   //edit user data
+
+//   task_edit.addEventListener("click", () => {
+//     if (task_edit.innerHTML === "Edit") {
+//       task_input.removeAttribute("readonly");
+//       task_input.focus();
+//       task_edit.innerHTML = "Save";
+//     } else {
+//       task_input.setAttribute("readonly", "readonly");
+//       task_edit.innerHTML = "Edit";
+//     }
+//   });
+
+//   //delete user data
+
+//   task_delete.addEventListener("click", () => {
+//     // task.remove();
+//     tasks.removeChild(task);
+//   });
+
+//   // console.log(UserData);
+
+//   // console.log("clicked!");
+// });
